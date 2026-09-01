@@ -858,4 +858,20 @@ a { color: inherit; }
   .services, .process { padding: 60px 16px; }
   .cta-section { padding: 60px 20px; margin: 0 16px; border-radius: 18px; }
   .watermark { font-size: 120px; }
+
+  /* The hero photo is landscape; on a tall narrow screen object-fit:cover
+     crops it to a very zoomed-in sliver that fights the headline for
+     attention. Darken it further so it recedes into a texture instead. */
+  .clock-photo-img { filter: brightness(0.4) saturate(0.7) contrast(1.05); animation-name: kenburns-mobile; }
+  @keyframes kenburns-mobile {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.04); }
+  }
+  /* At this crop the M glyph isn't reliably in frame, so skip the glitch. */
+  .clock-photo-glitch { display: none; }
+  .hero-vignette {
+    background:
+      linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.4) 68%, rgba(0,0,0,0.92) 100%),
+      radial-gradient(ellipse at 50% 50%, transparent 20%, rgba(0,0,0,0.8) 100%);
+  }
 }
