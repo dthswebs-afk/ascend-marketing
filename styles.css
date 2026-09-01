@@ -170,10 +170,12 @@ a { color: inherit; }
   gap: 5px;
   width: 22px;
   height: 22px;
+  box-sizing: content-box;
+  padding: 11px;
+  margin: -11px;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
 }
 .menu-toggle span {
   display: block;
@@ -195,11 +197,13 @@ a { color: inherit; }
   color: var(--text-muted);
   width: 22px;
   height: 22px;
+  box-sizing: content-box;
+  padding: 11px;
+  margin: -11px;
   cursor: pointer;
-  padding: 0;
 }
 .sound-toggle:hover { color: var(--green-bright); }
-.sound-toggle svg { position: absolute; inset: 0; }
+.sound-toggle svg { position: absolute; inset: 11px; }
 .sound-toggle .icon-sound-off { display: none; }
 .sound-toggle.is-off .icon-sound-on { display: none; }
 .sound-toggle.is-off .icon-sound-off { display: block; }
