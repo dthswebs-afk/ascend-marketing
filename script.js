@@ -53,14 +53,4 @@
       }
     });
   }
-
-  // Ambient sound toggle (visual state only — no audio asset shipped).
-  const soundToggle = document.getElementById('soundToggle');
-  if (soundToggle) {
-    soundToggle.addEventListener('click', () => {
-      const pressed = soundToggle.getAttribute('aria-pressed') === 'true';
-      soundToggle.setAttribute('aria-pressed', String(!pressed));
-      soundToggle.classList.toggle('is-off', !pressed);
-    });
-  }
 })();

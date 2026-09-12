@@ -190,24 +190,6 @@ a { color: inherit; }
 .menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-.sound-toggle {
-  position: relative;
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  width: 22px;
-  height: 22px;
-  box-sizing: content-box;
-  padding: 11px;
-  margin: -11px;
-  cursor: pointer;
-}
-.sound-toggle:hover { color: var(--green-bright); }
-.sound-toggle svg { position: absolute; inset: 11px; }
-.sound-toggle .icon-sound-off { display: none; }
-.sound-toggle.is-off .icon-sound-on { display: none; }
-.sound-toggle.is-off .icon-sound-off { display: block; }
-
 .btn {
   display: inline-flex;
   align-items: center;
